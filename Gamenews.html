@@ -1,0 +1,791 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<!-- Required meta tags -->
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+		<title>Gaming News</title>
+		<link rel="stylesheet" href="path/to/font-awesome/css/font-awesome.min.css">
+
+		<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+		<link rel="stylesheet" href="">
+		<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+		<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+		<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+		<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
+		<link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
+		<link rel="stylesheet" type="text/css" href="Game.css">
+		<link rel="stylesheet" href="path/to/font-awesome/css/font-awesome.min.css">
+		<script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+		 <link
+      rel="stylesheet"
+      href="https://unpkg.com/swiper/swiper-bundle.min.css"
+    />
+
+
+	</head>
+
+
+
+	<body>
+
+		<!-- navbar -->
+		 <nav class="navbar navbar-expand-lg navbar-dark" style="background-color:#9e0303; ">
+      <a href="#" class="navbar-brand navstyle gamewarrior"style="">
+        <img class="img-fluid" src="data:image/webp;base64,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" alt="">
+      </a>
+      <button type="button" class="navbar-toggler"   data-toggle="collapse" data-target="#mymenu">
+      <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="mymenu">
+        <ul class="navbar-nav">
+          
+          <li class="nav-item  navlist navpara"><a href="index.html" class="nav-link active ">Home</a>
+        </li>
+        <li class="nav-item  navlist active navpara "><a href="warroom.html" class="nav-link navstyle">War Room</a>
+      </li>
+      <li class="nav-item  navlist active "><a href="Gamenews.html" class="nav-link navstyle navpara1">News</a>
+    </li>
+    <li class="nav-item navlist active "><a href="#" class="nav-link navstyle navpara "style="text-decoration: line-through;" >Contact</a>
+  </li>
+</ul>
+</div>
+</nav>
+
+		
+<div class="container-fluid dragonbg " >
+	<div class="container">
+		<div class="row">
+			<div class="col-md-8 col-lg-8 col-xl-8 col-12 col-sm-12 psbox" >
+	<h1 class="psbigheading" >DOWNWELL AND SPACE HULK: <br> TACTICS ARE COMING TO XBOX <br> GAME PASS FOR PC</h1>
+	<div class="row">
+		<img src="https://preview.colorlib.com/theme/amin/img/hero/meta-pic.jpg.webp" style="" class="psimg" alt="">
+		<p class="pssmallheading">by Marcin Jankowski &nbsp;/ &nbsp;June 01, 2021</p>
+	</div>
+</div>
+
+	
+	<div class="col-md-4 col-xl-4 col-lg-4 col-sm-12 col-12 newsslidebox" style="">
+		<div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel"data-interval="2800">
+			<div class="row">
+			<!-- 	<div class="parallelogram"></div> -->
+				<h1 class="tp">  Trending post</h1>
+			</div>
+			
+  
+  <div class="carousel-inner">
+    <div class="carousel-item active">
+
+    	<div class="row" style="margin-top: 20px;">
+    		<div class="col-3 col-sm-3 col-md-3 col-3" >
+    			<img class="tpimg" src="data:image/webp;base64,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" alt="">
+    		</div>
+    		<div class="col-9 col-sm-9 col-md-9 col-9" >
+    			<p class="tplines">Jalopy developer is making a game where you 'build stuff...</p>
+    			<p class="tpcomment">July 01,2021 &nbsp; /&nbsp; <i class="far fa-comment"></i>&nbsp; 12</p>
+    		</div>
+    	</div>
+<div class="row" style="margin-top: 0px;">
+    		<div class="col-3 col-sm-3 col-md-3" >
+    			<img class="tpimg" src="https://preview.colorlib.com/theme/amin/img/trending/trending-8.jpg.webp" alt="">
+    		</div>
+    		<div class="col-9 col-sm-9 col-md-9" >
+    			<p class="tplines">Jalopy developer is making a game where you 'build stuff...</p>
+    			<p class="tpcomment">July 01,2021 &nbsp; /&nbsp; <i class="far fa-comment"></i>&nbsp; 12</p>
+    		</div>
+    	</div>
+
+
+ <div class="row">
+    		<div class="col-md-3 col-3 col-sm-3" >
+    			<img class="tpimg" src="https://preview.colorlib.com/theme/amin/img/trending/trending-6.jpg.webp" alt="">
+    		</div>
+    		<div class="col-9 col-sm-9 col-9 col-sm-9 col-md-9" >
+    			<p class="tplines">Jalopy developer is making a game where you 'build stuff...</p>
+    			<p class="tpcomment">July 01,2021 &nbsp; /&nbsp; <i class="far fa-comment"></i>&nbsp; 12</p>
+    		</div>
+    	</div>
+
+   <div class="row">
+    		<div class="col-3 col-sm-3 col-md-3" >
+    			<img class="tpimg" src="https://preview.colorlib.com/theme/amin/img/trending/trending-7.jpg.webp" alt="">
+    		</div>
+    		<div class="col-9 col-sm-9 col-9 col-sm-9 col-md-9" >
+    			<p class="tplines">Jalopy developer is making a game where you 'build stuff...</p>
+    			<p class="tpcomment">July 01,2021 &nbsp; /&nbsp; <i class="far fa-comment"></i>&nbsp; 12</p>
+    		</div>
+    	</div>
+
+
+
+      
+      
+    </div>
+
+
+
+    <div class="carousel-item">
+     <div class="row" style="margin-top: 20px; ">
+    		<div class="col-3 col-sm-3 col-md-3" >
+    			<img class="tpimg" src="data:image/webp;base64,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" alt="">
+    		</div>
+    		<div class="col-9 col-sm-9 col-9 col-sm-9 col-md-9" >
+    			<p class="tplines">Jalopy developer is making a game where you 'build stuff...</p>
+    			<p class="tpcomment">July 01,2021 &nbsp; /&nbsp; <i class="far fa-comment"></i>&nbsp; 12</p>
+    		</div>
+    	</div>
+    	<div class="row" >
+    		<div class="col-3 col-sm-3 col-md-3" >
+    			<img class="tpimg" src="https://preview.colorlib.com/theme/amin/img/trending/trending-2.jpg.webp" alt="">
+    		</div>
+    		<div class="col-9 col-sm-9 col-9 col-sm-9 col-md-9" >
+    			<p class="tplines">Jalopy developer is making a game where you 'build stuff...</p>
+    			<p class="tpcomment">July 01,2021 &nbsp; /&nbsp; <i class="far fa-comment"></i>&nbsp; 12</p>
+    		</div>
+    	</div>
+    	<div class="row" >
+    		<div class="col-3 col-sm-3 col-md-3" >
+    			<img class="tpimg" src="data:image/webp;base64,UklGRrAIAABXRUJQVlA4IKQIAABwIACdASpQAFAAPmUmj0WkIiEa28b8QAZEswBWGarEPkRc/+A+r7jB/L0Z/4/dUc9j6SP87vnm8v/5i0pGpWrz6HhB9U+Y/wt83u/HgBewd56zXxNdynxXlAP83ei7/0eZL6l9gb+b/3jrbeiSv0GF2zs7P/2hPU0X9QWZ1Va9M6zXiqs2u7TyL/yLsfAdYh2KLNUDjOvgOX21b6tdaPWxJHcLlDd2s8e2+laQffJK86tUpVLyAhmzfRoztu+dFu4TaYNxVQZMvK3dclf31TFqnSwOCVlPAICXV0+XZTK9QYIfw8Fz7PDZEoH7kOb9YMgtdZEscyLYQ35td5MtzHQHgV0I2zh3l11e6AAAAP7OBUnrR39p6P7GxbV7YIJkW0E8KOI/7hbEauCA9KRApK1PKL52Vx23N+Dv6yc3Un517XUH//4pmDoMO/fQ0Hj/3j3/nBMSrDi4FuaXHhtj4cKy5kjBqgBl/SMnG/Yxj2IEUN5lJ7MiZxSxtRbUzzXxnFnEJFK8bq+zcjsgQO4GUtB7ZZLJtaeW2v2RdxDQCIXujg1UF3pj9xX2I28Lda/fafF41VQXng8rLLM18YvIV/iAKIvEJXY3VQQMFchdq3kUonB9ZkWqda/NaHSB+DbdurGgldXh/AoxVHx3ztD+KZk0ubE5CdiIe3zjFUk4GWEd3x/7G50il5yRUWI55CEEQq9nh9p3ucekKcMc9DPfAfxbYQ8gDxTja04QA6ovqkm/QIdA0efPyHcRvNEyidtv1yNJYxa0n3RaS0aYjh7A/WdY7OC0/5Bw1V8JordHUdrRv8KOtyPPAg+29TFE23fEBpt6t31j2jLhFak4oU92iRM/POrh6IvhvvtTKYBBFUJPAoxZZ8BLh1R2YlxYky+xeRFnBqu/jNF6dvXtwLT2AU3x8bVMqf2UKLCm+XdxIQ4w/xrRMoI5GRQn1WEc/TTWFMtvBlAwQlHVwLC9x7JAnCrsDm1YEbXC3HV9An9PBqalWq8/G5+YxxYiZ999maKgfy5tKCXvbasF7YYk02vBNtQ2yIshp+grrzboSkSDuNLEwgvbtxdR07mLSdAWCtJunLVFDiuIw2Netw3QMgk8RFfFLUsLOZMGyhXq6xYuKeChi83XhrSmv9nd2/wFWHsjGyG8mhwZ4SG4aLbmiaZdCG8Q5Kej99zUiRBUIz5sTleffYx5anwMtBS/bad2fkXcdw240ZQruK4DTBNg7Zy69tGxwZT1/98tm/djTrVJzGkRGgbBtjHQecu9U/ox3iwGNxy8Agu2rrLGGyXIEWG5kJsWYTOJ2HooX081jjZPMFng0NWSaHiPkyGzgMxJMHmpKjUqFAKMWbtpPy41is7+UtYE6YjSQ6nXjXfZVoP24e/5fbeDvxjnRZAAjuSjNxKtvd0ZDD6jyMBh0KlORk+SZHAdq/kiUzXsrD8zrX8NsfkN+33TOq3p5+AT3CytTq/FDQPr7IbGofrpmsfeOZbOdDqMR1sS8bsmNRfBbegAthrd//igNljXgjE7a2fOQpoflsfHO7ERz1h9f2/5SCGpC5QGJQOrm2+fy3Q7jJK0Z6fVguNze6CAFCYKVSrI3yBQrq3VTbw+4nXnhqfWaWXcOyWwwvxANKH+hfH292PbAE8Om0VA/R7IO9xzPPRlI49/8zgG4ZkKDOLEqrckY/9ZyuO5Rg+OwJiNiBz1WrNXiPiJjypLy07lq+OBgk79uxsJ5SsEfIqpLgStt718GTBmevC/kGz0KmKfLXtMyAv9BywX0a1blbo9eo6+OdO22knWLzUjtyHwgg8zdTDJA8QPqrDkb84+o/l9Abl1SfrZLCsCjZlhYSRcIVeCayDTToiSqO89BCslLGlanWfCEQZwEmnsfyTV/CWzq/ThA11rhhgLDWQqO8LnrihOPmPS5v/NRdkdyVVs51dmxLvRnu5Cp5q5B8dNJhIY1bgw/YvF4knM0REd+zuLtWI+74VvP+eq7YFNsf8xGq5z6Ldb2dKXkDGOujbz0HyY9V7Y6SZ1EMosKDB+hGazdshE2H3hrIFB5b4mqZPO2yc0IMYeT4A1UWQjW/AGIRSFiHXGzOWSkGLjE/bq89zN1TmWudHu2oEqWGBrQ4L2MUAsN7pSltIAEYRTi24EkkySlz/e3I2WJmfmIhl4vGV1As2a6OpdPFYA/Lt0AIJvrcrevsmmLCSPypvFRtOZsl09xvIjllxITZMcc2ybAqoEPqtNcnntF8P2krAVRkGDfVXrw/InyjBjVtmYV7qcgV9y5+ScjrZRwjcDrfCJMDs9U61KCFlYn8+Yu54oaEsV9sDMKy//ACz4l39FFxZ9JWsJKBfh25D0uJ5QidXAGi88wl7Z2BCi+ezPHf8sDWCb9QddaYn3aOrq+yuYztRslv0Na72zeBZd5zWAb9jfCNiTClufEhPI7Dx5RH/aUvXgiDjMk5PvHiahE0k11GR6MO+pukTnHgVDAVWEXY3hHBYSM1JOn4eCr+SN5hcfQHjIxdui9uEFOnQKY0BXn5ULkA7vcPGb9rZ3z7SKGSJpULT+40WALrBIGyhR2UKsauAekMhM4IkFAqpmhY6nn/7vKVDkPVMoQ3vanVW6x3XvyfwtwtwkFN1D6rgetc7YMlMRQFsU4E0Zr7M/8zrHVFsdJgV1TE/6QdQS3fjpcgo3LlMHnGNRLXDkxVfDp2vmHZCwpo4g6w0fDNKTl3/VORhrOLvK7CH/bOf1kBsr9WbiZHN3zosNk8xKy1up15bRddSoOhmwfwjcXMnrRbxP/f0L8ZSsoo4dFHByHKIFujs9rGaSTRt6Fj4PcCIHQcCDtv7AQNX2ix+GsTAy3pioO1zFIG2OfwdSMPWX8cRM34QUgU2HZIMVzdeKu/q+HQglrv9FulfK9favHdl+gc6S7uMcPZnDLtoTkKXbfJFx660hJZZGyfAqQ+7X724smOlfAAAA" alt="">
+    		</div>
+    		<div class="col-9 col-sm-9 col-md-9" >
+    			<p class="tplines">Jalopy developer is making a game where you 'build stuff...</p>
+    			<p class="tpcomment">July 01,2021 &nbsp; /&nbsp; <i class="far fa-comment"></i>&nbsp; 12</p>
+    		</div>
+    	</div>
+    	<div class="row" >
+    		<div class="col-3 col-sm-3 col-md-3 col-lg-3" >
+    			<img class="tpimg" src="https://preview.colorlib.com/theme/amin/img/trending/trending-3.jpg.webp" alt="">
+    		</div>
+    		<div class="col-9 col-sm-9 col-md-9 col-lg-9" >
+    			<p class="tplines">Jalopy developer is making a game where you 'build stuff...</p>
+    			<p class="tpcomment">July 01,2021 &nbsp; /&nbsp; <i class="far fa-comment"></i>&nbsp; 12</p>
+    		</div>
+    	</div>
+
+
+    </div>
+    
+  </div>
+  <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev" >
+    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+    <span class="sr-only">Previous</span>
+  </a>
+  <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+    <span class="sr-only">Next</span>
+  </a>
+</div>
+	</div>
+		</div>
+	</div>
+</div>
+
+
+
+
+
+ <!-- Latest preview -->
+<div class="container-fluid latestpreviewbox" style="" >
+      <div class="container  ">
+      	<div class="row " style="justify-content: center;">
+      		<div class="parallelogram"></div>
+      		<p class="lpheading">LATEST PREVIEW</p>
+      	</div>
+     <div class="row ">
+        <div class="swiper-container mySwiper "data-swiper-autoplay="1000"class="">
+      <div class="swiper-wrapper">
+        <div class="swiper-slide"style="background-color: #080808;">
+
+          <div class="card cardsize border-0"style="background-color:#080808;" >
+          	
+           
+  <img class="card-img-top lpcardimg" src="https://preview.colorlib.com/theme/amin/img/latest-preview/lp-1.jpg.webp" alt="Card image cap">
+  <div class="card-body">
+    <p class="card-text lpcardmaintext">A monter prom poster got hijacked for a...</p>
+    <p class="tpcomment">July 01,2021 &nbsp; /&nbsp; <i class="far fa-comment"></i>&nbsp; 12</p>
+  </div>
+</div>
+        </div>
+
+
+        <div class="swiper-slide"style="background-color: #080808;">
+        	 <div class="card cardsize border-0"style="background-color: #080808;" >
+          	
+           
+  <img class="card-img-top lpcardimg" src="https://preview.colorlib.com/theme/amin/img/latest-preview/lp-2.jpg.webp" alt="Card image cap">
+  <div class="card-body">
+    <p class="card-text lpcardmaintext">A monter prom poster got hijacked for a...</p>
+    <p class="tpcomment">July 01,2021 &nbsp; /&nbsp; <i class="far fa-comment"></i>&nbsp; 12</p>
+  </div>
+</div>
+
+        </div>
+
+        <div class="swiper-slide"style="background-color: #080808;">
+        	 <div class="card cardsize border-0"style="background-color: #080808;" >
+          	
+           
+  <img class="card-img-top lpcardimg" src="https://preview.colorlib.com/theme/amin/img/latest-preview/lp-3.jpg.webp" alt="Card image cap">
+  <div class="card-body">
+    <p class="card-text lpcardmaintext">A monter prom poster got hijacked for a...</p>
+    <p class="tpcomment">July 01,2021 &nbsp; /&nbsp; <i class="far fa-comment"></i>&nbsp; 12</p>
+  </div>
+</div>
+
+        </div>
+        <div class="swiper-slide"style="background-color: #080808;">
+        	 <div class="card cardsize border-0"style="background-color: #080808;" >
+          	
+           
+  <img class="card-img-top lpcardimg" src="https://preview.colorlib.com/theme/amin/img/latest-preview/lp-4.jpg.webp" alt="Card image cap">
+  <div class="card-body">
+    <p class="card-text lpcardmaintext">A monter prom poster got hijacked for a...</p>
+    <p class="tpcomment">July 01,2021 &nbsp; /&nbsp; <i class="far fa-comment"></i>&nbsp; 12</p>
+  </div>
+</div>
+
+        </div>
+
+        <div class="swiper-slide"style="background-color: #080808;">
+        	 <div class="card cardsize border-0"style="background-color: #080808;" >
+          	
+           
+  <img class="card-img-top lpcardimg"  src="https://preview.colorlib.com/theme/amin/img/latest-preview/lp-1.jpg.webp" alt="Card image cap">
+  <div class="card-body">
+    <p class="card-text lpcardmaintext">A monter prom poster got hijacked for a...</p>
+    <p class="tpcomment">July 01,2021 &nbsp; /&nbsp; <i class="far fa-comment"></i>&nbsp; 12</p>
+  </div>
+</div>
+
+        </div>
+        <div class="swiper-slide"style="background-color: #080808;">
+        	 <div class="card cardsize border-0"style="background-color: #080808;" >
+          	
+           
+  <img class="card-img-top lpcardimg" src="https://preview.colorlib.com/theme/amin/img/latest-preview/lp-2.jpg.webp" alt="Card image cap">
+  <div class="card-body">
+    <p class="card-text lpcardmaintext">A monter prom poster got hijacked for a...</p>
+    <p class="tpcomment">July 01,2021 &nbsp; /&nbsp; <i class="far fa-comment"></i>&nbsp; 12</p>
+  </div>
+</div>
+
+        </div>
+        <div class="swiper-slide"style="background-color: #080808;">
+        	 <div class="card cardsize border-0"style="background-color: #080808;" >
+          	
+           
+  <img class="card-img-top lpcardimg" src="https://preview.colorlib.com/theme/amin/img/latest-preview/lp-3.jpg.webp" alt="Card image cap">
+  <div class="card-body">
+    <p class="card-text lpcardmaintext">A monter prom poster got hijacked for a...</p>
+    <p class="tpcomment">July 01,2021 &nbsp; /&nbsp; <i class="far fa-comment"></i>&nbsp; 12</p>
+  </div>
+</div>
+
+        </div>
+        
+      </div>
+      <div class="swiper-pagination "></div>
+    </div>
+     </div>
+    </div>
+  
+</div>
+
+
+<!-- video guide -->
+<div class="container-fluid videoguidebox">
+  <div class="container">
+
+
+  	<div class="row " style="justify-content: center;">
+      		<div class="parallelogram"></div>
+      		<p class="lpheading">VIDEO GUIDE</p>
+      	</div>
+    <div class="row">
+      
+      <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel"data-interval="1500">
+  
+  <div class="carousel-inner">
+
+
+    <div class="carousel-item active">
+      <div class="row">
+        <div class="col-md-6 col-lg-6 col-xl-6 col-sm-11 col-11  ">
+        <div class="youtube y1" id="ffiJNSy8CBA" src="assests/bitch.png" style=""></div>
+      </div>
+      <div class="col-md-6 col-lg-6 col-xl-6 col-sm-11 col-11 ">
+        <div class="youtube y2" id="ffiJNSy8CBA" src="assests/assian.png" style=""></div>
+      </div>
+      </div>
+
+      <div class="row" style="margin-top: 20px;">
+        <div class="col-md-4 col-lg-4 col-xl-4 col-sm-11 col-11">
+          <div class="youtube y3" id="ffiJNSy8CBA" src="assests/ship.png" style=" "></div>
+        </div>
+          <div class="col-md-4 col-lg-4 col-xl-4 col-sm-11 col-11">
+          <div class="youtube y4" id="ffiJNSy8CBA" src="assests/fight.png" style=""></div>
+        </div>
+        <div class="col-md-4 col-lg-4 col-xl-4 col-sm-11 col-11">
+          <div class="youtube y5" id="ffiJNSy8CBA" src="assests/magician.png" style=" "></div>
+        </div>
+
+      </div>
+
+
+ 
+    </div>
+
+
+    <div class="carousel-item">
+
+      <div class="row">
+        <div class="col-md-6 col-lg-6 col-xl-6 col-sm-11 col-11">
+        <div class="youtube y1" id="ffiJNSy8CBA" src="assests/magician.png"></div>
+      </div>
+      <div class="col-md-6 col-lg-6 col-xl-6 col-sm-11 col-11">
+        <div class="youtube y2" id="ffiJNSy8CBA" src=" assests/fight.png" ></div>
+      </div>
+      </div>
+
+      <div class="row" style="margin-top: 20px;">
+        <div class="col-md-4 col-lg-4 col-xl-4 col-sm-11 col-11">
+          <div class="youtube y3" id="ffiJNSy8CBA" src="assests/ship.png" ></div>
+        </div>
+          <div class="col-md-4 col-lg-4 col-xl-4 col-sm-11 col-11">
+          <div class="youtube y4" id="ffiJNSy8CBA" src="assests/assian.png" ></div>
+        </div>
+        <div class="col-md-4 col-lg-4 col-xl-4 col-sm-11 col-11">
+          <div class="youtube y5" id="ffiJNSy8CBA" src="assests/bitch.png " ></div>
+        </div>
+
+      </div>
+    
+
+
+    </div>
+    
+  </div>
+</div>
+</div>
+</div>
+</div>
+
+  <!-- news update ---------------------------------------------------------------------------------------------------------------------------->
+  <div class="container-fluid" style="background-color: 
+#0d0d0d;margin-top: 50px;">
+  	<div class="container">
+  		<div class="row " >
+      		<div class="parallelogram"></div>
+      		<p class="lpheading">NEWS & UPDATE</p>
+      	</div>
+  		<div class="row">
+  			<div class="col-md-8 col-lg-8 col-xl-8 col-sm-12" >
+  				<div class="row">
+  					<img class="img-fluid" src="assests/tank.png" alt="">
+  				</div>
+  				<div class="row">
+  					<div class="col-md-4 col-11 col-lg-4 col-xl-4 col-sm-11">
+  						<img class="img-fluid" src="assests/thanos.png" alt="">
+  					</div>
+  					<div class="col-md-4 col-11 col-lg-4 col-xl-4 col-sm-11">
+  						<img class="img-fluid" src="assests/gladiator.png" alt="">
+  					</div>
+  					<div class="col-md-4 col-11 col-lg-4 col-xl-4 col-sm-11">
+  						<img class="img-fluid" src="assests/shell.png" alt="">
+  					</div>
+  				</div>
+  			</div>
+
+  			<div class="col-md-4 col-lg-4 col-xl-4 col-11 col-sm-12 " style="">
+
+  						<div class="row " style="justify-content: center;" >
+      		<div class="parallelogramsm"></div>
+      		<p class="socialmedia">SOCIAL MEDIA</p>
+      	</div>
+
+      	<div class="row " style="justify-content: center;">
+      		<div class="col-md-11 col-xl-10 col-lg-11 col-11 col-sm-11 fbpara fb">
+      			<div class="inner row">
+
+      				<div class="col-md-2 col-2 col-sm-2 col-lg-2 fbicondiv" style="background-color: ;">
+      				 <i class="fab fa-facebook-f white-text mr-4 fbiconfafa"> </i>
+      			</div>
+
+      			<div class="col-md-10 col-10 col-sm-10 col-lg-10 fbtextdiv"  >
+      				<div class="row" >
+      					<p style="" class="fbtext"> Facebook <span class="followers">1.2k followers</span></p>
+      				
+      				</div>
+      			</div>
+
+
+      			</div>
+
+      		</div>
+      		<div>
+      			
+      		</div>
+
+      	</div>
+	<div class="row instarow" style="justify-content: center;">
+      		<div class="col-md-11 col-xl-10 col-lg-11 col-11 col-sm-11 fbpara">
+      			<div class="inner row">
+
+      				<div class="col-md-2 col-2 col-sm-2 col-lg-2 fbicondiv" style="background-color: ;">
+      				 <i class="fab fa-twitter white-text mr-4 fbiconfafa"> </i>
+      			</div>
+
+      			<div class="col-md-10 col-10 col-sm-10 col-lg-10 fbtextdiv"  >
+      				<div class="row" >
+      					<p style="" class="fbtext"> Twitter <span class="followers">1.2k followers</span></p>
+      				
+      				</div>
+      			</div>
+
+
+      			</div>
+
+      		</div>
+      		<div>
+      			
+      		</div>
+
+      	</div>
+	<div class="row instarow" style="justify-content: center;">
+      		<div class="col-md-11 col-xl-10 col-lg-11 col-11 col-sm-11 fbpara">
+      			<div class="inner row">
+
+      				<div class="col-md-2 col-2 col-sm-2 col-lg-2 fbicondiv" style="background-color: ;">
+      				 <i class="fab fa-youtube white-text mr-4 fbiconfafa"> </i>
+      			</div>
+
+      			<div class="col-md-10 col-10 col-sm-10 col-lg-10 fbtextdiv"  >
+      				<div class="row" >
+      					<p style="" class="fbtext"> Instagram <span class="followers">2.2k followers</span></p>
+      				
+      				</div>
+      			</div>
+
+
+      			</div>
+
+      		</div>
+      		<div>
+      			
+      		</div>
+
+      	</div>
+
+      		<div class="row instarow" style="justify-content: center;">
+      		<div class="col-md-11 col-xl-10 col-lg-11 col-11 col-sm-11 fbpara">
+      			<div class="inner row">
+
+      				<div class="col-md-2 col-2 col-sm-2 col-lg-2 fbicondiv" style="background-color: ;">
+      				 <i class="fab fa-instagram white-text mr-4 fbiconfafa"> </i>
+      			</div>
+
+      			<div class="col-md-10 col-10 col-sm-10 col-lg-10 fbtextdiv"  >
+      				<div class="row" >
+      					<p style="" class="fbtext"> Youtube <span class="followers">3.2k followers</span></p>
+      				
+      				</div>
+      			</div>
+
+
+      			</div>
+
+      		</div>
+      		<div>
+      			
+      		</div>
+
+      	</div>
+      	<div class="container-fluid" style=" margin-top: 50px;">
+      			<div class="row " style="justify-content: center;" >
+      		<div class="parallelogramsm"></div>
+      		<p class=" hg">HARDWARE GUIDES</p>
+      	</div>
+
+      		   <div class="row">
+    		<div class="col-3 col-sm-3 col-md-3" >
+    			<img class="tpimg tpimghg" src="data:image/webp;base64,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" alt="">
+    		</div>
+    		<div class="col-9 col-sm-9 col-9 col-sm-9 col-md-9" >
+    			<p class="tplines tplineshg">Jalopy developer is making a game where you 'build stuff...</p>
+    			<p class="tpcomment tpcommenthg">July 01,2021 &nbsp; /&nbsp; <i class="far fa-comment"></i>&nbsp; 12</p>
+    		</div>
+    	</div>
+
+    	   <div class="row">
+    		<div class="col-3 col-sm-3 col-md-3" >
+    			<img class="tpimg tpimghg" src="https://preview.colorlib.com/theme/amin/img/trending/trending-1.jpg.webp" alt="">
+    		</div>
+    		<div class="col-9 col-sm-9 col-9 col-sm-9 col-md-9" >
+    			<p class="tplines tplineshg">Jalopy developer is making a game where you 'build stuff...</p>
+    			<p class="tpcomment tpcommenthg">July 01,2021 &nbsp; /&nbsp; <i class="far fa-comment"></i>&nbsp; 12</p>
+    		</div>
+    	</div>
+
+    	   <div class="row">
+    		<div class="col-3 col-sm-3 col-md-3" >
+    			<img class="tpimg tpimghg" src="https://preview.colorlib.com/theme/amin/img/trending/trending-3.jpg.webp" alt="">
+    		</div>
+    		<div class="col-9 col-sm-9 col-9 col-sm-9 col-md-9" >
+    			<p class="tplines tplineshg">Jalopy developer is making a game where you 'build stuff...</p>
+    			<p class="tpcomment tpcommenthg">July 01,2021 &nbsp; /&nbsp; <i class="far fa-comment"></i>&nbsp; 12</p>
+    		</div>
+    	</div>
+
+
+      		
+      	</div>
+
+
+  			</div>
+
+
+  		</div>
+
+
+
+  	</div>
+  </div>
+
+<div style="color:#0d0d0d  ;background-color: #0d0d0d;">
+	<span>njnjnjnj</span>
+</div>
+
+  <!-- INSTAGRAM -->
+  <div class="container-fluid" style="background-color: #0d0d0d;">
+
+  	<div class="container">
+  		<div class="row "  >
+      		
+      		<p class=" hg1">INSTAGRAM</p>
+      	</div>
+  		<div class="row">
+  			
+  			<div class="col-md-8 col-xl-8 col-lg-8 col-sm-11 col-12">
+  			
+
+  				<div class="row">
+  					<div class="col-md-6 col-xl-6 col-lg-6 col-sm-12 col-12">
+  							<img class="img-fluid igmon" src="https://preview.colorlib.com/theme/amin/img/instagram/insta-1.jpg.webp" alt="">
+  					</div>
+  					<div class="col-md-6 col-xl-6 col-lg-6 col-sm-12 col-12">
+  						<p class="reviewpg">REVIEWS</p>
+  						<p class="igtext">HERE'S AN HOUR OF SIDE-QUESTS FROM THE OUTER WORLDS...</p>
+  						<p class="tpcomment tpcommenthg">by <span style="color: red">Admin</span> &nbsp;/&nbsp;July 01,2021 &nbsp; /&nbsp; <i class="far fa-comment"></i>&nbsp; 12</p>
+  						<p class="iglorem">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Quis ipsum suspendisse ultrices...</p>
+  					</div>
+
+  				</div>
+<div class="row">
+  					<div class="col-md-6 col-xl-6 col-lg-6 col-sm-12 col-12">
+  							<img class="img-fluid igmon" src="https://preview.colorlib.com/theme/amin/img/instagram/insta-2.jpg.webp" alt="">
+  					</div>
+  					<div class="col-md-6 col-xl-6 col-lg-6 col-sm-12 col-12">
+  						<p class="reviewpg">REVIEWS</p>
+  						<p class="igtext">INFINITY WARD'S FOCUS ISN'T ON BATTLE ROYALE, CALL OF...</p>
+  						<p class="tpcomment tpcommenthg">by <span style="color: red">Admin</span> &nbsp;/&nbsp;July 01,2021 &nbsp; /&nbsp; <i class="far fa-comment"></i>&nbsp; 12</p>
+  						<p class="iglorem">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Quis ipsum suspendisse ultrices...</p>
+  					</div>
+
+  				</div>
+  				<div class="row">
+  					<div class="col-md-6 col-xl-6 col-lg-6 col-sm-12 col-12">
+  							<img class="img-fluid igmon" src="https://preview.colorlib.com/theme/amin/img/instagram/insta-3.jpg.webp" alt="">
+  					</div>
+  					<div class="col-md-6 col-xl-6 col-lg-6 col-sm-12 col-12">
+  						<p class="reviewpg">REVIEWS</p>
+  						<p class="igtext">HERE'S AN HOUR OF SIDE-QUESTS FROM THE OUTER WORLDS...</p>
+  						<p class="tpcomment tpcommenthg">by <span style="color: red">Admin</span> &nbsp;/&nbsp;July 01,2021 &nbsp; /&nbsp; <i class="far fa-comment"></i>&nbsp; 12</p>
+  						<p class="iglorem">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Quis ipsum suspendisse ultrices...</p>
+  					</div>
+
+  				</div>
+  				<div class="row">
+  					<div class="col-md-6 col-xl-6 col-lg-6 col-sm-12 col-12">
+  							<img class="img-fluid igmon" src="https://preview.colorlib.com/theme/amin/img/instagram/insta-4.jpg.webp" alt="">
+  					</div>
+  					<div class="col-md-6 col-xl-6 col-lg-6 col-sm-12 col-12">
+  						<p class="reviewpg">REVIEWS</p>
+  						<p class="igtext">TEAMFIGHT TACTICS IS IN CHAOS AFTER TODAY'S PATCH...</p>
+  						<p class="tpcomment tpcommenthg">by <span style="color: red">Admin</span> &nbsp;/&nbsp;July 01,2021 &nbsp; /&nbsp; <i class="far fa-comment"></i>&nbsp; 12</p>
+  						<p class="iglorem">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Quis ipsum suspendisse ultrices...</p>
+  					</div>
+
+  				</div>
+  					
+
+
+  		
+
+  			</div>
+
+  			<div class="col-md-4 col-xl-4 col-lg-4 col-sm-12 col-12" >
+  					<div class="row " style="justify-content: center;" >
+      		<div class="parallelogramsm"></div>
+      		<p class=" hg">INSTAGRAM</p>
+      	</div>
+  						<div class="row" style="justify-content: center;">
+  							<div class="row">
+
+  								<div class="col-md-6 col-lg-6 col-xl-6 col-sm-6 col-6">
+  									<img src="https://preview.colorlib.com/theme/amin/img/instagram/ip-1.jpg.webp" class="img-fluid" alt="">
+  								</div>
+  								<div class="col-md-6 col-lg-6 col-xl-6 col-sm-6 col-6">
+  									<img src="data:image/webp;base64,UklGRuQJAABXRUJQVlA4INgJAACQNACdASqRAJEAPm0ylEekIyIhKVLK0IANiWVtXF5qk7+bVf05bgjnotOU3pKfsuAG9HcrNeBxMs77QZEeJThvpEA1GEJy2X1CDu5f90CoHFvcohpFBY/qlXPB1i8uhbuwm3aAs+ayKsyilmsY2X+JWkibdJKl1c5Qz+N2dt+bp+upEjBfq6UP91lrkfbdOwFemxfm5R6IlkLh7jLWpXPaPi/YBbW44DJDzL3/owQlqjH6NK1YCkjST+qntn6zuMWGEmyGjiBQdkwfLfZ8/c1n4kAalQHSCGm44IFnKq2N60Wc/rEV8gEqgUQbiEu6zonTpB0qs1dVy4HYGJr3jGkRbPZ+mkpNoWfU8Autspw9aNEM9X6PEwzB/wAom9zi7cFZYvOG5yxHdmh5kCzpGxXj5fhF7EvvMw8+yIMXKWj1g4zfS119xLZfzG/PEI/XZyydejl/rOv/5EnFAixusp0GHacJK5lMC1/rQzavldIzv8kzlDaW/SNJk4TqX3yZBjnAcltLTG3Qt8UacPuafCdlXmhy31bA0dcNbqpFVYd6DyGth8F45+LlMdk2HgAA/u6ebGvnBER9f0lFlFhc0cLejOpMokP0IMOEErEj71th+ZMbytvzmmfi9W1LrSu6YSL2ni1w91OE9JNCHnotCuLiVwwFVDRGxBdxwJ4reYNDVcjciytHEXe6081/oX7I/mwgdNVb7Xd/ipylwxzfmegudLcmhvqB5X/25hNWR4kkKkwq8OBvUfm2FmVRCWuUH9TqRW0L8shAYFcMUqXPxZmUKDaR4AMbWgCnU//Y3sndqtWASQi1gJ/4j5KUeTcHYd5UMEEAC1M0t55DmqYpqMt2ckrKdpJE58sET5FogpkEYp4k4NUUg/KzxqXrrY2qy6GfAV0f/YmH7mpmQ9nnBiV+VinwJJIYOZfmF9z561I0Fvxo5UnLRJEO5CbaDJHsAxMQTgHeskCEa08GIulOmoa5X47g/D7MImYSQJ61+QFFL3tri5D6fND3Qm/h/MEC2N61vkgQhVitbriVkrRWUDg20LVhssHwjYy+vEgbAQLjL74eKjCrPwD2o5uq2zOweh3KLArMuzqEEYzKhwZ61G4nY/8QMRxXrlQoSnsmF0Q3w4Vyfxlob6FFxqGE+u4W8wHazl+SfUkOeaL+lmTi2idD4DTCZ1Utj5EuW9f1s6Cud6UxVxdY15RYEB3hPCKQGVHo5Y6c8UyZWbW3APgb1NztPmre4ql3yxh98/p66osAdi+A+U2ALbrhkj4LTEd8peL+gQY0XC9sLUO2pDFQrSFoLNv1OjgidP+nLVs+yNUWR6e0MoeqfLWmenxZVVdjA7JZ9ZUf24KXIhH2MlkGZGuIlwDHve9/dtAYZjdE79l27mf8mECGY0Y0JwjuDGlLIRJaNVSmj71X0pOR3JaP68qNIWdJb+T4nbfL+bwTf61Gr3b91DaI8eLpolg+IqbeoaplRHdZUgTU2ZpOHWbzsjNw3NiBJGsGRmI7viHyTvVzssnSMEqgO7rN6+8sDLnMFeSjC9lw/4xObNw1CKEedOQuZhZDXkf5WJ6cQoZWPSOyiVvEJng1heT9+oYfBkaGoJfTzQYf1ohU3DVAsxBjSQFRc39DA1gL/1M45zzYc/GQXMBXRVVWqIukk0cJcGV4xPHNF50Dk2huKlOSpOwr/5lufyTF4nl/NOEP2W5ldxcAtu1opKgDb62wvp042GknHXujFFMFTGf1o9OK2wshovq/k9DeL5h9FMx9bYOMIOL+zjcaEg+zeD5mkvD3eYpWbsYE9zRY7C77JSsjJeJGQJLSY3gU0ztXg/Z+OPwQCtW2khMXZNPj6GlY7ZqBoM6GJWyrgNlSe1bICoEtqLwDNHi8Ni37AHrELsj6AuL3VTiv9alJg+YeqWvqjWnQNGtUzGBvwPoLLi1dodhL46EX/nAIi3GIzL9gyjoJldd0TXnkEfrnyb2X1k3XQs7l2Ei3bVDhjO4MAdalKkEEUaZdRmQKWnGUYwNTP1nDwaQwfs/3/3K80JszpP57P/skdtWQ7bVaxUSZ7HbWipomYgAxmVZrFCVA4pxunUNRW+JPXC+abSR1R3s68MXgadl8XR8CkS7tuIiF1BrZEqzMOmHdzGGaxnSk8QI/5ffuwpZOGH2tQZy/Xi1ujH1VeUcJn0J+UJQD9gcLqamcCOqp2vS3/z+3sXRMj0Lzo/NlPAKCogqbN/VYMO1h4+325s7Oxoj6KPElScX/BmRYQiuZ9Mk/nd5qU3ipxL9+VniF+3ICSnaqF1WyopJCPNRvqyqdcy4wEztwUjSpxzxzMy1pcN+oz3JPI1Qd02rGqd85XNNXUeCIfxX7Vvq2PksYMH7pbdP9qNWn24JS2EJc8ztcqzKbVnCAqOsx9AKj6dQW+YMjVIm0t0v5oJ4Ougoq65IKhy4BI7xYjz+XNGWRaTBdLd1yTP5MQsn2a0Wyp1NnARmBIGzSEv9v5MMELWrRVSYZHAszUe1D1ppPJzoVNgAxifHxMCa5EFJ4mOB3jjd8Ns9zwLOLP7NESq7ziqP5tr4nF5NfGQ8g0i8ax2kurFoV/U56ljCgt+BEcQmTuw7yCS/tp9CLbs2dXAFFqKNavxJdDk0Uf8M0yKM91WydZlg2DymRNCTb74Ft/KZfkmEYPz+OSgz0L2MhOQcEbON+DGRrZoKpF+y+e5XIZgOlWrbJEARE3mfqRPExK4kph+QvUpnRo96SdrvVNsPREiC9fwNB496ct7pYTG4ISodJ4zFCyXXaxEN2/SqneeaBlLZ+EWKkxcik3vDTlcloHO9DjId8maTvFwEUBV5TIrnfUk0ijYXqeljCNae06w3caw4nlSlFjet9G7kY1JxDehNM3ENP7R41sy89YTVzyhwV4pOHjHt5zBSJCYYAalb9FNSACYwP4EjP4QVZ27wAxcb8aIyK1bTCZx4wx90CZ2Nuqr2TwUkSQBWOWBg+LJzM5zYFwioET4Zl0ePr7/CYb41eGdUbjhShzlxYkGJ6yZhD0tcqHa56BRQd9toNezZY3bEV0Zdc/3sn5LxOO6OsQGmYbXrJI2u5tFgNt7eDe9cFrz2tCFNFX+CUGNacZxJRTPXa3di3EFkg1MWvBsMlm7zl/IjTmuKyfg0eaoQ08sp5otP8atYVyIUczrgCIhKnHhyUnBXcabhTy1g8K5/GlD0FHOgXyLTpX4fOQLcMbTD74ne5JjJ6BzJElw+1PmNEqxfy4I1bD4QSJ35v0o1u9Sdox2vfrL2VVBUChtT6cocjfvJsfbhIVyUImpuHOsTQztAR4wqmVGBwiu0hyuTHAQoW0yN+KU6u7552TQ1vOeIvcZhCG0wNvgbGyT5yOM0wAAA=" class="img-fluid" alt="">
+  								</div>
+
+  							</div>
+  							<div class="row"style="margin-top: 25px;" >
+
+  								<div class="col-md-6 col-lg-6 col-xl-6 col-sm-6 col-6">
+  									<img src="https://preview.colorlib.com/theme/amin/img/instagram/ip-3.jpg.webp" alt="">
+  								</div>
+  								<div class="col-md-6 col-lg-6 col-xl-6 col-sm-6 col-6">
+  									<img src="https://preview.colorlib.com/theme/amin/img/instagram/ip-4.jpg.webp" class="img-fluid" alt="">
+  								</div>
+  								
+  							</div>
+
+  						</div>
+
+  						<div class="row">
+  							<img src="assests/bestof.png" class="img-fluid" style="margin-top: 30px;" alt="">
+  						</div>
+
+
+  						<div >
+
+  								<div class="row " style="justify-content: center;" >
+      		<div class="parallelogramsm"></div>
+      		<p class=" hg">SUBSCRIBE</p>
+      	</div>
+      	<p style="color: white;">Lorem ipsum dolor sit amet, consectetur adipiscing elit, eiusmod tempor.
+
+</p>
+  							
+  							<form action="/action_page.php">
+ 
+  <input type="email" id="email" name="email"placeholder="Enter email" class="form-control formpara">
+  <input type="text" id="email" name="email"placeholder="Name" class="form-control formpara nameform">
+ 
+</form>
+<button class="btn subsbtn btn-block" > SUBSCRIBE</button>
+  						</div>
+
+  			</div>
+
+
+
+  		</div>
+  	</div>
+  </div>
+
+ <br><br>
+<!-- footer -->
+<div class="container-fluid" style="background-color: black;">
+	<div class="container">
+		<div class="row">
+
+													<div class="col-md-4 col-lg-4 col-xl-4 col-sm-12 col-12">
+														<img src="data:image/webp;base64,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" class="img-fluid" alt="">
+														<p class="amintext">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua lacus vel facilisis.</p>
+										
+
+
+													</div>
+
+			<div class="col-md-4 col-lg-4 col-xl-4 col-sm-12 col-12">
+														<div class="row " style="justify-content: center;" >
+									      		<div class="parallelogramsm"></div>
+									      		<p class=" hg">EDITOR'S CHOICE</p>
+									      	</div>
+													<div class="row" style="margin-top: 20px;">
+										    		<div class="col-3 col-sm-3 col-md-3 col-3" >
+										    			<img class="tpimg" src="https://preview.colorlib.com/theme/amin/img/trending/trending-8.jpg.webp" alt="">
+										    		</div>
+										    		<div class="col-9 col-sm-9 col-md-9 col-9" >
+										    			<p class="tplines">Jalopy developer is making a game where you 'build stuff...</p>
+										    			<p class="tpcomment">July 01,2021 &nbsp; /&nbsp; <i class="far fa-comment"></i>&nbsp; 12</p>
+										    		</div>
+										    	</div>
+
+
+    									<div class="row" style="margin-top: 20px;">
+								    		<div class="col-3 col-sm-3 col-md-3 col-3" >
+								    			<img class="tpimg" src="data:image/webp;base64,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" alt="">
+								    		</div>
+											    		<div class="col-9 col-sm-9 col-md-9 col-9" >
+											    			<p class="tplines">Jalopy developer is making a game where you 'build stuff...</p>
+											    			<p class="tpcomment">July 01,2021 &nbsp; /&nbsp; <i class="far fa-comment"></i>&nbsp; 12</p>
+											    		</div>
+    										</div>
+
+
+			</div>
+
+
+											<div class="col-md-4 col-lg-4 col-xl-4 col-sm-12 col-12">
+												<img src="assests/tag1.png" class="img-fluid" alt="">
+											</div>
+
+
+			
+		</div>
+	</div>
+
+												<div style="border-top:1px solid; grey ;justify-content: center;text-align: center;">
+													<span style="color:#808080;text-align:center;margin-top:10px " > Copyright ©2021 All rights reserved | This template is made with &#10084;&#65039; by Priyansh</span>
+													 </span>
+
+													
+												</div>
+
+</div>
+
+
+<script type="text/javascript" src="https://codegena.com/assets/js/youtube-embed.js"></script>
+
+    <!-- Swiper JS -->
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+
+    <!-- Initialize Swiper -->
+    <script>
+      var swiper = new Swiper(".mySwiper", {
+        slidesPerView: 3,
+        spaceBetween: 30,
+        freeMode: true,
+        pagination: {
+          el: ".swiper-pagination",
+          clickable: true,
+        },
+      });
+
+  var swiper = new Swiper('.swiper-container', {
+    effect: 'coverflow',
+    grabCursor: true,
+    centeredSlides: true,
+    slidesPerView: 'auto',
+    loop: true,
+    coverflowEffect: {
+        rotate: 50,
+        stretch: 0,
+        depth: 100,
+        modifier: 1,
+        slideShadows: true,
+    },
+    autoplay: {
+        delay: 1000,
+    },
+});
+    </script>
+
+
+
+
+
+	</body>
+	</html>

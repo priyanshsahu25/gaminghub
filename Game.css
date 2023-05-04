@@ -1,0 +1,729 @@
+@import url('https://fonts.googleapis.com/css2?family=Cinzel:wght@800&display=swap');
+body{
+    margin: 0px;
+    padding: 0px;
+overflow-x: hidden;
+background-color: black;
+}
+
+
+   .gamewarrior{
+font-size: 28px;
+margin-left: 170px;
+}
+.navlist
+{
+margin-left: 70px;
+}
+.navbar-nav
+{
+margin-left: 100px;
+}
+.gameimg{
+ position: relative;
+
+}
+     
+
+  .navpara{
+
+   
+    
+    transform: skew(-15deg);
+    background: #a81d1d ;
+   
+    font-family: Cinzel, serif;
+
+}
+  .navpara:hover{
+
+   
+    
+    transform: skew(-15deg);
+    background: #c20000;
+   
+    font-family: Cinzel, serif;
+
+}
+.navpara1:hover{
+
+   
+    
+    transform: skew(-15deg);
+    background: #c20000;
+   
+    font-family: Cinzel, serif;
+
+}
+
+  .navpara1{
+
+   
+    
+    transform: skew(-15deg);
+    background:#a81d1d;
+   font-size: 20px;
+    font-family: Cinzel, serif;
+
+}
+
+
+.navlist{
+  padding: 5px;
+}
+
+.bg{
+  background-image: url('https://preview.colorlib.com/theme/amin/img/hero/hero-1.jpg.webp');
+}
+.bg1{
+  background-image: url('https://preview.colorlib.com/theme/amin/img/hero/hero-2.jpg.webp');
+}
+
+
+.carousel-control-next-icon,
+.carousel-control-prev-icon {
+  background-image: none;
+  color: red;
+  font-size: 10px;
+}
+.carousel-control-next-icon {
+    background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='red' viewBox='0 0 8 8'%3E%3Cpath d='M2.75 0l-1.5 1.5 2.5 2.5-2.5 2.5 1.5 1.5 4-4-4-4z'/%3E%3C/svg%3E");
+}
+
+.carousel-control-prev-icon {
+    background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='red' viewBox='0 0 8 8'%3E%3Cpath d='M5.25 0l-4 4 4 4 1.5-1.5-2.5-2.5 2.5-2.5-1.5-1.5z'/%3E%3C/svg%3E");
+}
+.carousel-control-prev,
+.carousel-control-next{
+  margin-left: 280px;
+  margin-top: -540px
+}
+.tp{
+  font-family: Cinzel, serif;
+    margin-left: 20px;
+    
+    color: white;
+    font-size: 30px;
+    font-weight: bold;
+    margin-top: 18px;
+}
+.tplines{
+        font-family: Cinzel, serif;
+        font-style: italic;
+          margin-top:2px;
+          color: white;
+}
+.tpcomment{
+    color:#808080;
+    font-size: 15px;
+}
+.tpimg{
+    margin-top:6px;
+
+}
+
+.dragonbg{
+    background-image: url('assests/dragon.jpg');
+
+background-size: 110% 100%;
+background-repeat: no-repeat;
+
+}
+.newsslidebox{
+ margin-top: 220px;
+ margin-left: 0px;
+background-color: black;
+height: 590px;
+}
+.psbox{
+    margin-top: 220px;
+    color: white;
+ 
+    font-family: Cinzel, serif;
+    font-weight: bold;
+}
+.psbigheading{
+font-weight:bold;
+font-size: 38px;
+}
+
+
+
+.pssmallheading{
+color:#808080;
+    font-size: 16px;
+    margin-left: 20px;
+     margin-top: 20px;
+}
+.psimg{
+    border-radius: 50%;
+    margin-left: 18px;
+    margin-top: 15px;
+}
+  .swiper-container {
+        width: 100%;
+        height: 100%;
+      }
+
+      .swiper-slide {
+        text-align: center;
+        font-size: 18px;
+        background: #fff;
+
+        /* Center slide text vertically */
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: -webkit-flex;
+        display: flex;
+        -webkit-box-pack: center;
+        -ms-flex-pack: center;
+        -webkit-justify-content: center;
+        justify-content: center;
+        -webkit-box-align: center;
+        -ms-flex-align: center;
+        -webkit-align-items: center;
+        align-items: center;
+      }
+
+      .swiper-slide img {
+        display: block;
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+      }
+
+.cardsize{
+    width: 300px;
+}
+.lpcardmaintext{
+    font-family: Cinzel, serif;
+    color: white;
+}
+.lpheading{
+    color: white;
+    font-family: Cinzel, serif;
+    font-weight: bold;
+    font-size: 35px;
+
+}
+.parallelogram {
+    width: 16px;
+    height: 28px;
+    transform: skew(-10deg);
+    background: #c20000;
+    margin-top: 10px;
+    margin-right: 10px;
+}
+.latestpreviewbox{
+    background-color: #080808;
+    height: 500px;
+    padding-top: 50px;
+
+}
+.abc{
+    margin-top: 20px;
+}
+.videoguidebox{
+    background-color: black;
+}
+.y1{
+width:600px; height:394px;
+}
+.y2{
+    width:600px; height:394px;
+}
+.y3{
+    height:250px;
+}
+.y4{
+     height:250px;
+}
+.y5{
+    height:250px;
+}
+.lpheading{
+    color: white;
+    font-family: Cinzel, serif;
+    font-weight: bold;
+    font-size: 35px;
+
+}
+.socialmedia{
+   color: white;
+    font-family: Cinzel, serif;
+    font-weight: bold;
+    font-size: 22px; 
+    font-style: italic;
+}
+.parallelogramsm {
+    width: 14px;
+    height: 28px;
+    transform: skew(-10deg);
+    background: #c20000;
+    margin-top: 2px;
+    margin-right: 10px;
+}
+
+
+
+.fbpara{
+
+    height: 50px;
+    transform: skew(-20deg);
+   background-color: black;
+color: white;
+border: 2px solid #252525;
+
+}
+
+.inner{
+
+   
+    transform: skew(20deg);
+  
+}
+.fbicondiv{
+     background: 
+#252525;
+transform: skew(-20deg);
+}
+.fbtext{
+    margin-left: 20px;
+    margin-top: 5px;
+}
+.followers{
+    margin-left: 50px;
+}
+.fbiconfafa{
+    transform: skew(20deg);
+    margin-top: 10px;
+}
+.instarow{
+   margin-top: 15px;
+}
+.hg{
+   color: white;
+    font-family: Cinzel, serif;
+    font-weight: bold;
+    font-size: 22px; 
+    font-style: italic;
+}
+.hg1{
+
+   color: white;
+    font-family: Cinzel, serif;
+    font-weight: bold;
+    font-size: 22px; 
+    font-style: italic;
+    margin-top: 50px;
+    margin-left: 20px;
+
+}
+.reviewpg {
+    width: 96px;
+    padding-left: 12px;
+    padding-top: 2px;
+    height: 28px;
+    transform: skew(-10deg);
+    background: #440909;
+    
+    color: white;
+     font-family: Cinzel, serif;
+}
+.igtext{
+   color: white;
+     font-family: Cinzel, serif;
+     font-size: 22px; 
+}
+.iglorem{
+    font-size: 15px;
+    color: grey;
+}
+.igmon{
+    height: 280px;
+}
+.formpara{
+
+   
+    
+    transform: skew(-15deg);
+    background: #0d0d0d;
+    border: 0.5px solid grey;
+
+}
+.nameform{
+    margin-top: 20px;
+}
+.subsbtn{
+    background-color:#680606 ;
+     transform: skew(-15deg);
+     color: white;
+     margin-top: 20px;
+}
+.amintext{
+    margin-top: 15px;
+    color: grey;
+    font-size: 15px;
+}
+.footericonpara{
+    transform: skew(-15deg);
+    background:
+#252525;
+font-size: 25px;
+color: white;
+width: 46px;
+height: 46px;
+
+}
+
+.straighticon{
+ transform: skew(15deg);
+ justify-content: center;
+ padding: 10px;
+}
+/*****************************************************************************************************************************************/
+@media (min-width: 320px)  and (max-width: 480px)
+{
+
+.dragonbg{
+    background-image: url('assests/dragon.jpg');
+
+background-size: 110% 100%;
+background-repeat: no-repeat;
+
+}
+.psbox{
+    margin-top: 220px;
+    color: white;
+ 
+    font-family: Cinzel, serif;
+    font-weight: bold;
+}
+.psbigheading{
+font-weight:bold;
+font-size: 28px;
+}
+
+
+
+.pssmallheading{
+color:#808080;
+    font-size: 13px;
+    margin-left: 20px;
+     margin-top: 20px;
+}
+.psimg{
+    border-radius: 50%;
+    margin-left: 18px;
+    margin-top: 15px;
+    
+
+}
+
+.newsslidebox{
+ margin-top: 120px;
+ margin-left: 0px;
+background-color: black;
+height: 590px;
+}
+
+.tp{
+  font-family: Cinzel, serif;
+    margin-left: 20px;
+    
+    color: white;
+    font-size: 30px;
+    font-weight: bold;
+    margin-top: 18px;
+}
+.tplines{
+        font-family: Cinzel, serif;
+        font-style: italic;
+          margin-top:2px;
+          color: white;
+}
+.tpcomment{
+    color:#808080;
+    font-size: 15px;
+}
+.tpimg{
+    margin-top:6px;
+
+}
+.carousel-control-prev,
+.carousel-control-next{
+display: none;
+}
+
+.swiper-pagination{
+    display: none;
+} 
+.lpcardmaintext{
+    font-family: Cinzel, serif;
+    color: white;
+}
+.lpheading{
+    color: white;
+    font-family: Cinzel, serif;
+    font-weight: bold;
+    font-size: 25px;
+
+}
+.parallelogram {
+    width: 12px;
+    height: 24px;
+    transform: skew(-10deg);
+    background: #c20000;
+    margin-top: 6px;
+    margin-right: 10px;
+}
+.latestpreviewbox{
+    background-color: black;
+    height: 670px;
+    margin-top: 10;
+}
+.videoguidebox{
+    background-color: black;
+}
+.y1{
+width:300px; height:200px;
+}
+.y2{
+    width:300px; height:200px;
+}
+.y3{
+    height:250px;
+    width:300px;
+}
+.y4{
+     height:250px;
+     width:300px;
+}
+.y5{
+    height:250px;
+    width:300px;
+}
+
+.fbpara{
+
+    height: 50px;
+    transform: skew(-20deg);
+   background-color: black;
+color: white;
+border: 2px solid #c20000;
+}
+.inner{
+
+   
+    transform: skew(20deg);
+  
+}
+.fbicondiv{
+     background: 
+#252525;
+transform: skew(-20deg);
+}
+.fbtext{
+    margin-left: 20px;
+    margin-top: 5px;
+    font-size: 15px;
+}
+.followers{
+    margin-left:24px;
+}
+.fbiconfafa{
+    transform: skew(20deg);
+    margin-top: 10px;
+}
+.socialmedia{
+    margin-top: 40px;
+}
+.parallelogramsm{
+ margin-top: 40px;
+}
+
+.instarow{
+   margin-top: 15px;
+}
+.tpimghg{
+height:60px;
+}
+.tplineshg{
+font-size: 10px;
+margin-left: 15px;
+}
+.tpcommenthg{
+margin-left: 15px;
+margin-top: -10px;
+font-size: 10px;
+}
+.hg{
+    margin-top: 40px;
+    color: white;
+     font-family: Cinzel, serif;
+}
+.reviewpg {
+    width: 96px;
+    padding-left: 12px;
+    padding-top: 2px;
+    height: 28px;
+    transform: skew(-10deg);
+    background: #440909;
+    margin-top: 30px;
+    
+    color: white;
+     font-family: Cinzel, serif;
+}
+.igtext{
+   color: white;
+     font-family: Cinzel, serif;
+     font-size: 22px; 
+}
+.iglorem{
+    font-size: 15px;
+    color: grey;
+}
+.igmon{
+    height: 250px;
+    margin-top: 30px;
+}
+
+
+}
+/*****************************************************************************************************************************************/
+@media (min-width: 481px)  and (max-width: 768px)
+{
+.y1{
+width:450px; height:300px;
+}
+.y2{
+    width:450px; height:300px;
+}
+.y3{
+   width:450px; height:300px;
+}
+.y4{
+width:450px; height:300px;
+}
+.y5{
+ width:450px; height:300px;
+}
+.socialmedia{
+    margin-top: 40px;
+}
+.parallelogramsm{
+ margin-top: 40px;
+}
+
+.hg{
+    margin-top: 40px;
+    color: white;
+     font-family: Cinzel, serif;
+     font-size: 25px;
+}
+}
+/*****************************************************************************************************************************************/
+@media (min-width: 769px)  and (max-width: 1024px)
+{
+.dragonbg{
+    background-image: url('assests/dragon.jpg');
+
+background-size: 110% 100%;
+background-repeat: no-repeat;
+
+}
+
+.psbox{
+    margin-top: 220px;
+    color: white;
+ 
+    font-family: Cinzel, serif;
+    font-weight: bold;
+}
+.psbigheading{
+font-weight:bold;
+font-size: 28px;
+}
+
+
+
+.pssmallheading{
+color:#808080;
+    font-size: 13px;
+    margin-left: 20px;
+     margin-top: 20px;
+}
+.psimg{
+    border-radius: 50%;
+    margin-left: 18px;
+    margin-top: 15px;
+    
+
+}
+
+.newsslidebox{
+ margin-top: 120px;
+ margin-left: 0px;
+background-color: black;
+height: 510px;
+}
+
+.tp{
+  font-family: Cinzel, serif;
+    margin-left: 20px;
+    
+    color: white;
+    font-size: 20px;
+    font-weight: bold;
+    margin-top: 18px;
+}
+.tplines{
+        font-family: Cinzel, serif;
+        font-style: italic;
+          margin-top:2px;
+          color: white;
+           font-size: 12px;
+}
+.tpcomment{
+    color:#808080;
+    font-size: 12px;
+}
+.tpimg{
+    margin-top:6px;
+    height: 50px;
+    width: 50px;
+}
+.carousel-control-prev,
+.carousel-control-next{
+display: none;
+}
+
+.fbicondiv{
+     background: 
+#252525;
+transform: skew(-20deg);
+}
+.fbtext{
+    margin-left: 20px;
+    margin-top: 5px;
+    font-size: 11px;
+}
+.followers{
+    margin-left:24px;
+}
+.fbiconfafa{
+    transform: skew(20deg);
+    margin-top: 10px;
+}
+
+.instarow{
+   margin-top: 15px;
+}
+.hg{
+    margin-top: 10px;
+    color: white;
+     font-family: Cinzel, serif;
+     font-size: 15px;
+}
+
+}
